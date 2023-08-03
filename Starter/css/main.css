@@ -1,0 +1,63 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 6.7em;
+  background: #fcf5eb;
+  font-family: "Playfair Display", serif;
+}
+
+h1.mainhead {
+  font-size: 4.4rem;
+  margin-top: 2em;
+  position: relative;
+}
+
+h1.mainhead::before {
+  position: absolute;
+  content: "N";
+  top: -0.6em;
+  left: -0.2em;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 30rem;
+}
+
+section {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  flex-direction: column;
+  gap: 1em;
+  border-top: 1px solid black;
+}
+
+article h1 {
+  font-size: 2.2rem;
+}
+
+article p {
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+  section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+  }
+
+  article {
+    flex: 1;
+  }
+
+  .first {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .first {
+    flex-basis: 0;
+  }
+}
